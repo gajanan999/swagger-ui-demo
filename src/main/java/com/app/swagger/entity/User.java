@@ -1,9 +1,16 @@
 package com.app.swagger.entity;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class User {
 
+	@ApiModelProperty(notes = "The database generated employee ID", required = true)
 	private Long id;
+	
+	@ApiModelProperty(notes = "The employee name")
 	private String name;
+	
+	
 	public Long getId() {
 		return id;
 	}
